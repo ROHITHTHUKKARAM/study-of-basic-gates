@@ -62,18 +62,46 @@ Y= A⊕B
 5.	For different input combinations generate the timing diagram.
 
 
-**PROGRAM**
+# PROGRAM:
+```
+module gates_exp1(a, b, c, d, e, x, y, z);
+  input a, b;
+  output c, d, e, x, y, z;
+
+  assign c = a & b;   // AND gate
+  assign d = a | b;   // OR gate
+  assign e = a ^ b;   // XOR gate
+  assign x = ~(a & b); // NAND gate
+  assign y = ~(a | b); // NOR gate
+  assign z = ~(a ^ b); // XNOR gate
+
+endmodule
+```
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: RegisterNumber: 
+ Developed by:Rohith T
+ RegisterNumber:212223040173
  
-**Logic symbol & Truthtable**
+# Logic symbol & Truthtable
 
-**RTL realization Output:** 
+![image](https://github.com/ROHITHTHUKKARAM/study-of-basic-gates/assets/159523335/7514566b-d991-41e6-ad91-5727418872c5)
 
-**RTL**
+![image](https://github.com/ROHITHTHUKKARAM/study-of-basic-gates/assets/159523335/3094cab4-9de4-4381-b67f-03a0149b5554)
 
-**Result:**
+![image](https://github.com/ROHITHTHUKKARAM/study-of-basic-gates/assets/159523335/cb70858d-039a-43b5-ad0b-bd3ed8848cc8)
+
+
+# RTL realization Output:
+
+![image](https://github.com/ROHITHTHUKKARAM/study-of-basic-gates/assets/159523335/a6872c7f-2a5d-475f-b154-5b28d4ca1c30)
+
+
+# RTL
+
+![image](https://github.com/ROHITHTHUKKARAM/study-of-basic-gates/assets/159523335/ffd6f8ec-8d1d-439d-b698-95cf148b4393)
+
+
+# Result:
 
 
